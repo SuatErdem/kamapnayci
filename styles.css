@@ -1,15 +1,15 @@
 
 
-.neon-buttoni {
+.neon-button2 {
     font-size: 30px;
   
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
-    border: var(--clr-neon) 7px solid;
-    padding: 0.019em 0.019em;
-    border-radius: 2000px;
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 20000000000000px;
   
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
   
