@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <body class="centered">
+        
+        <script>
+            function play(){
+                var audio = document.getElementById("audio");
+                var audiop = document.getElementById("ali");
+                audio.play();
+                audiop.play();
+                audiop.volume = 0.2;
+                audio.volume = 0.5;
+            
+            }
+            function playi(){
+                var ses = document.getElementById("efekt");
+                ses.play();
+            }
+            function light(sw){
+                
+                var pic;
+                if (sw==0){
+                    pic = "Photos/images.jpg";
+                    play();
+                }
+                else{
+                    pic = "Photos/indir.jpg";
+                    playi();
+                }
+                document.getElementById('kampanye').src = pic;
+            }
+            
+        </script>
+        <p>
+            <a class="neon-button" href="#" onclick="light(0)">ORTALAMA KAMPANYACI</a>
+            <a class="neon-button" href="#" onclick="light(1)">ORTALAMA MANTIKÇI</a>
+        </p>
+        <audio id="ali" src="Photos/al.mp4"></audio>
+        <audio id="efekt" src="Photos/ampul.mp3"></audio>
+        <audio id="audio" src="Photos/horse.ogv"></audio>
+    <img class="border" width="700" height="500" src="Photos/images.jpg" id="kampanye">
+    </body>
+
+
+
+
+</html>
